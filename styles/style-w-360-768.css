@@ -2,6 +2,7 @@
     header{
         width: 100%;
         background-position:  right;
+        animation: bg-header 100s linear infinite alternate;
     }
     .limit-1200-px{
         max-width: 100%;
@@ -276,4 +277,12 @@
         display: none;
     }
 
+    @keyframes bg-header {
+        from{
+            background-position: right;
+        }
+        to{
+            background-position:left;
+        }
+    }
 }
